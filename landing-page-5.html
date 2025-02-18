@@ -3,22 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Pagina 5</title>
+    <link rel="stylesheet" href="css/devstyle.css">
+    <title>Registro</title>
 </head>
 <body>
     <header>
-        <h1>Ingresa tus datos de contacto</h1>
+        <h1>DevTracker</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="landing-page-2.html">Proyectos</a></li>
+                <li><a href="landing-page-3.html">Agregar</a></li>
+            </ul>
+        </nav>
     </header>
-    <form action="">
-        <fieldset>
-            <label for="">Nombre: <input type="text" placeholder="Ingresa tu nombre"></label>
-            <label for="">Correo: <input type="email" placeholder="Ingresa tu correo"></label>
-            <label for="">Teléfono: <input type="tel" placeholder="Ingresa tu número"></label>
+    <main>
+        <form action="">
+            <fieldset class="contenedor-datos">
+                <p>Ingresa tus datos</p>
+                <label for="">Nombre: <input type="text" placeholder="Ingresa tu nombre" required></label>
+                <label for="">Correo: <input type="email" placeholder="Ingresa tu correo" required></label>
+                <label for="">Contraseña <input type="password" placeholder="Ingresa tu Contraseña" required></label>
+                <label >Genero:</label>
+                <select name="genero" id=""genero>
+                    <option value="">(Selecciona tu genero)</option>
+                    <option value="">Masculino</option>
+                    <option value="">Femenino</option>
+                    <option value="">Otro</option>
+                </select>
+                <input type="submit" id="button" value="Ingresar">
+            </fieldset>
+        </form>
+</main>
 
-        </fieldset>
-    </form>
 
-    <footer>@Diego Ortiz 2025</footer>
+        <footer>@Diego Ortiz 2025</footer>
+    
 </body>
 </html>
